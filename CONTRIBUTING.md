@@ -8,3 +8,4 @@ Please follow these guidelines when contributing:
 - Ensure tests (if any) pass before pushing
 
 Enterprise note: pushes to protected branches require passing CI, commitlint and pre-push checks.
+ ollama run qwen2.5
