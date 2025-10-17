@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/syne/500.css";
+@import "@fontsource/syne/600.css";
+@import "@fontsource/syne/700.css";
+
+@theme {
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Syne", sans-serif;
+  --color-gradient: linear-gradient(90deg, #ffd439 0%, #ffd439 100%);
+}
+
+@layer base {
+  body {
+    @apply font-body bg-black text-white text-xl overflow-x-clip;
+  }
+  h3 {
+    @apply font-heading text-2xl font-medium uppercase;
+  }
+}
+
+@layer components {
+  .main-container {
+    @apply max-w-[1600px] w-full m-auto px-4 lg:px-12;
+  }
+  h1 {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    padding-bottom: 12px;
+  }
+  
+  .text-stroke {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1::before {
+    height: 0.7vh;
+    bottom: 8px;
+  }
+}
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+
+  .animate-marquee-reverse{
+    animation: marquee 15s linear infinite reverse;
+  }
+
+   @keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .marquee-star1 {
+    animation: rotate360 10s linear infinite;
+    transform-origin: center;
+  }
+
+  .marquee-star2 {
+    animation: rotate360 10s linear infinite reverse;
+    transform-origin: center;
+  }
+
+/* Dashboard specific styles */
+.dashboard-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.stats-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Smooth transitions for dashboard elements */
+.dashboard-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.dashboard-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
