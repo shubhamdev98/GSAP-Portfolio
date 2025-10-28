@@ -4,7 +4,7 @@ import star from '../assets/asterisk_18879846.png'
 const Marquee: React.FC = () => {
   return (
     <>
-      <div className="overflow-hidden bg-red-500 text-black">
+      <div className="overflow-hidden bg-black text-white py-8">
         {/* Row 1 */}
         <div className="whitespace-nowrap animate-marquee text-6xl lg:text-[7vw] font-heading font-semibold leading-[1] tracking-tight">
           <span className="flex gap-4 lg:gap-8 mx-8">

@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
         <h1 className="text-3xl lg:text-[3.2vw] uppercase font-heading font-semibold">
           Shubham Panchal
         </h1>
-        <h2 className="text-6xl lg:text-[8vw] font-heading font-bold leading-[1] tracking-tight mt-3 mb-6 text-yellow-200">
+        <h2 className="text-6xl lg:text-[8vw] font-heading font-bold leading-[1] tracking-tight mt-3 mb-6 text-purple-500">
           Full Stack Web
           <br /> <span className="text-stroke">Developer</span>
         </h2>
@@ -137,7 +137,7 @@ const Hero: React.FC = () => {
               y2="257.056"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#ffd439" />
+              <stop stopColor="#581c87" />
               <stop offset="1" stopColor="#171717" />
             </linearGradient>
           </defs>

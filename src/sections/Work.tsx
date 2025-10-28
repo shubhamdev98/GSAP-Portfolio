@@ -45,7 +45,7 @@ const Work: React.FC = () => {
     <>
       <div
         ref={workRef}
-        className="min-h-screen bg-green-300 text-black py-24 lg:py-40 overflow-hidden"
+        className="min-h-screen bg-white text-black py-24 lg:py-40 overflow-hidden"
       >
         {/* Title Wrapper */}
         <div className="main-container pb-8 lg:pb-12 flex max-md:flex-col gap-6 justify-between items-start md:items-end">

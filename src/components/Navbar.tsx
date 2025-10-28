@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             <span className="border-l border-gray-500 h-6 mx-2" />
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/shubhamdev98"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 flex items-center gap-1 hover:text-[#ffd439] transition"
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             <span className="border-l border-gray-500 h-6 mx-2" />
 
             <a
-              href="https://medium.com/@yourusername"
+              href="https://shubhampanchal998.medium.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 flex items-center gap-1 hover:text-[#ffd439] transition"
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
             <span className="border-l border-gray-500 h-6 mx-2" />
 
             <a
-              href="https://www.linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/shubham-panchal-025792309/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 flex items-center gap-1 hover:text-[#ffd439] transition"

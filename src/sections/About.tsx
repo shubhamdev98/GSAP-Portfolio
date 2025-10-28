@@ -37,17 +37,16 @@ const About: React.FC = () => {
     <>
       <div
         ref={aboutRef}
-        className="h-screen bg-yellow-200 rounded-tl-[60px] rounded-tr-[60px] relative z-10"
+        className="h-screen bg-gray-200 rounded-tl-[40px] rounded-tr-[40px] relative z-10"
       >
-        {/* Text container */}
-        <h3 className="about-text main-container h-[30%] flex items-center text-black">
-          🙂, Who I Am
-        </h3>
-        <div className="about-text main-container flex justify-center items-center font-heading text-black text-2xl md:text-3xl xl:text-[40px] 2xl:text-5xl leading-[1.25]">
-          My approach combines clean design, smooth interactions, and thoughtful details to ensure
-          every project feels both visually striking and highly functional. Whether it's designing a
-          portfolio, building a business website, or shaping a brand's online presence, I focus on
-          creating work that not only looks good but also connects with people in a meaningful way.
+
+        <div className="about-text main-container flex justify-center items-center h-full font-heading text-black text-2xl md:text-3xl xl:text-[40px] 2xl:text-5xl">
+          I'm Shubham Panchal, a Full Stack Web Developer with 2.8 years of hands-on experience in
+          building scalable applications and REST APIs using Node.js and React.js. My work focuses
+          on creating efficient, user-centric, and high-performance web solutions. Skilled in
+          microservices architecture, SQL & NoSQL databases, and modern frameworks like Nest.js and
+          Next.js, I love combining clean design, smooth interactions, and functional precision to
+          deliver impactful digital experiences.
         </div>
       </div>
     </>
