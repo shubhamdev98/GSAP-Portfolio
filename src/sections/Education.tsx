@@ -7,7 +7,6 @@ const Education: React.FC = () => {
       institution: 'LJ University, Ahmedabad',
       degree: "Master’s of Computer Application (MCA)",
       duration: 'Graduated: 2023',
-      cgpa: 'CGPA: 6.2',
       details:
         'Focused on advanced topics in software engineering, database systems, and modern web technologies. Developed strong analytical and programming skills through academic projects and research work.',
       subjects: ['Software Engineering', 'Database Systems', 'Web Development', 'Cloud Computing', 'Data Structures'],
@@ -17,7 +16,6 @@ const Education: React.FC = () => {
       institution: 'Gujarat University, Ahmedabad',
       degree: 'Bachelor of Commerce (B.Com)',
       duration: 'Graduated: 2020',
-      cgpa: 'CGPA: 6.0',
       details:
         'Built a solid foundation in business management, accounting principles, and economics, providing valuable insights into the intersection of technology and commerce.',
       subjects: ['Business Management', 'Accounting', 'Economics', 'Statistics'],
@@ -70,7 +68,6 @@ const Education: React.FC = () => {
                         </div>
                         <div className="flex flex-wrap items-center gap-3 text-sm font-medium text-gray-700">
                           <span className="border px-2 py-1 rounded-full">{edu.duration}</span>
-                          <span className="border px-2 py-1 rounded-full">{edu.cgpa}</span>
                         </div>
                       </div>
                     </div>
