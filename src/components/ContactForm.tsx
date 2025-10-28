@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
   }, [])
 
   return (
-    <div className="relative bg-white text-black overflow-hidden min-h-screen">
+    <div className="relative bg-purple-400 text-black overflow-hidden min-h-screen">
       {/* Background shapes */}
       {shapes.map((shape, index) => {
         const style: React.CSSProperties = {
