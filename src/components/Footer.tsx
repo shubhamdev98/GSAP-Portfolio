@@ -1,12 +1,13 @@
 import React from 'react'
-import Logo from '../assets/Gemini_Generated_Image_7eumcz7eumcz7eum.png'
 import { Link } from 'react-router-dom'
+
+import Logo from '../assets/ChatGPT_Image_Oct_28__2025__11_02_55_AM-removebg-preview.png'
 
 const Footer: React.FC = () => {
   return (
     <>
       {/* Divider */}
-      <div className="max-w-[1500px] m-auto h-[1px] bg-white opacity-10"></div>
+      <div className="max-w-[1500px] m-auto h-[1px] bg-white opacity-10" />
 
       {/* Footer Top */}
       <footer className="main-container grid md:grid-cols-2 lg:grid-cols-4 gap-10 py-20">
@@ -47,7 +48,7 @@ const Footer: React.FC = () => {
       </footer>
 
       {/* Divider */}
-      <div className="max-w-[1500px] m-auto h-[1px] bg-white opacity-10"></div>
+      <div className="max-w-[1500px] m-auto h-[1px] bg-white opacity-10" />
 
       {/* Footer Bottom */}
       <div className="main-container grid md:grid-cols-2 gap-3 py-6 lg:py-8 max-md:text-center">

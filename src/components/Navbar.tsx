@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react'
-import Logo from '../assets/Gemini_Generated_Image_7eumcz7eumcz7eum.png'
-import { gsap } from 'gsap'
 import { useGSAP } from '@gsap/react'
-import { Link } from 'react-router-dom'
+import { gsap } from 'gsap'
+import React, { useRef, useState } from 'react'
 import { FaGithub, FaMedium, FaLinkedin } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
+import Logo from '../assets/ChatGPT_Image_Oct_28__2025__11_02_55_AM-removebg-preview.png'
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
@@ -41,17 +42,17 @@ const Navbar: React.FC = () => {
             <Link to="/" className="px-4 hover:text-[#ffd439] transition">
               Home
             </Link>
-            <span className="border-l border-gray-500 h-6 mx-2"></span>
+            <span className="border-l border-gray-500 h-6 mx-2" />
 
             <Link to="/projects" className="px-4 hover:text-[#ffd439] transition">
               Projects
             </Link>
-            <span className="border-l border-gray-500 h-6 mx-2"></span>
+            <span className="border-l border-gray-500 h-6 mx-2" />
 
             <a href="mailto:johndoe@gmail.com" className="px-4 hover:text-[#ffd439] transition">
               Contact
             </a>
-            <span className="border-l border-gray-500 h-6 mx-2"></span>
+            <span className="border-l border-gray-500 h-6 mx-2" />
 
             <a
               href="https://github.com/yourusername"
@@ -61,7 +62,7 @@ const Navbar: React.FC = () => {
             >
               <FaGithub /> GitHub
             </a>
-            <span className="border-l border-gray-500 h-6 mx-2"></span>
+            <span className="border-l border-gray-500 h-6 mx-2" />
 
             <a
               href="https://medium.com/@yourusername"
@@ -71,7 +72,7 @@ const Navbar: React.FC = () => {
             >
               <FaMedium /> Medium
             </a>
-            <span className="border-l border-gray-500 h-6 mx-2"></span>
+            <span className="border-l border-gray-500 h-6 mx-2" />
 
             <a
               href="https://www.linkedin.com/in/yourusername"
@@ -90,10 +91,10 @@ const Navbar: React.FC = () => {
           >
             <span
               className={`inline-block w-10 h-0.5 bg-white transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-[4px]' : ''}`}
-            ></span>
+            />
             <span
               className={`inline-block w-10 h-0.5 bg-white transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-[4px]' : ''}`}
-            ></span>
+            />
           </div>
         </div>
       </nav>
