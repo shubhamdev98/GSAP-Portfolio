@@ -25,3 +25,5 @@ build
 .husky/_
 *.sln
 *.sw?
+
+.vercel
