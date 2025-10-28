@@ -1,13 +1,13 @@
-@import "tailwindcss";
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/syne/500.css";
-@import "@fontsource/syne/600.css";
-@import "@fontsource/syne/700.css";
+@import 'tailwindcss';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/syne/500.css';
+@import '@fontsource/syne/600.css';
+@import '@fontsource/syne/700.css';
 
 @theme {
-  --font-body: "Inter", sans-serif;
-  --font-heading: "Syne", sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Syne', sans-serif;
   --color-gradient: linear-gradient(90deg, #ffd439 0%, #ffd439 100%);
 }
 
@@ -30,7 +30,7 @@
     font-weight: 600;
     padding-bottom: 12px;
   }
-  
+
   .text-stroke {
     -webkit-text-stroke: 1px white;
     color: transparent;
@@ -44,41 +44,41 @@
   }
 }
 
-  @keyframes marquee {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
-  .animate-marquee {
-    animation: marquee 15s linear infinite;
-  }
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
 
-  .animate-marquee-reverse{
-    animation: marquee 15s linear infinite reverse;
-  }
+.animate-marquee-reverse {
+  animation: marquee 15s linear infinite reverse;
+}
 
-   @keyframes rotate360 {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-  .marquee-star1 {
-    animation: rotate360 10s linear infinite;
-    transform-origin: center;
-  }
+.marquee-star1 {
+  animation: rotate360 10s linear infinite;
+  transform-origin: center;
+}
 
-  .marquee-star2 {
-    animation: rotate360 10s linear infinite reverse;
-    transform-origin: center;
-  }
+.marquee-star2 {
+  animation: rotate360 10s linear infinite reverse;
+  transform-origin: center;
+}
 
 /* Dashboard specific styles */
 .dashboard-card {

@@ -1,81 +1,83 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import GradientButton from "../components/GradientButton";
-import profile from "../assets/profile.png";
+import React, { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import GradientButton from '../components/GradientButton'
+import profile from '../assets/profile.png'
 
-const Hero = () => {
-  const heroRef = useRef(null);
-  const imageRef = useRef(null);
-  const buttonRef = useRef(null);
+const Hero: React.FC = () => {
+  const heroRef = useRef<HTMLDivElement>(null)
+  const imageRef = useRef<HTMLImageElement>(null)
+  const buttonRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const hero = heroRef.current;
-    const img = imageRef.current;
-    const button = buttonRef.current;
+    const hero = heroRef.current
+    const img = imageRef.current
+    const button = buttonRef.current
+
+    if (!hero || !img || !button) return
 
     // Make the image slightly rounded (10%) and initially hidden
     gsap.set(img, {
       opacity: 0,
       scale: 0.6,
-      borderRadius: "10%",
-      clipPath: "inset(0 round 10%)",
-    });
+      borderRadius: '10%',
+      clipPath: 'inset(0 round 10%)',
+    })
 
     // Cursor follow logic
-    const handleMouseMove = (e) => {
-      const rect = hero.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+    const handleMouseMove = (e: MouseEvent): void => {
+      const rect = hero.getBoundingClientRect()
+      const x = e.clientX - rect.left
+      const y = e.clientY - rect.top
 
       gsap.to(img, {
         x,
         y,
         duration: 0.4,
-        ease: "power3.out",
-      });
-    };
+        ease: 'power3.out',
+      })
+    }
 
-    const handleMouseEnter = () => {
-      gsap.to(img, { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" });
-    };
+    const handleMouseEnter = (): void => {
+      gsap.to(img, { opacity: 1, scale: 1, duration: 0.4, ease: 'power3.out' })
+    }
 
-    const handleMouseLeave = () => {
-      gsap.to(img, { opacity: 0, scale: 0.6, duration: 0.3, ease: "power2.in" });
-    };
+    const handleMouseLeave = (): void => {
+      gsap.to(img, { opacity: 0, scale: 0.6, duration: 0.3, ease: 'power2.in' })
+    }
 
     // Button hover hide/show
-    const handleButtonEnter = () => {
+    const handleButtonEnter = (): void => {
       gsap.to(img, {
         opacity: 0,
         scale: 0.4,
         duration: 0.3,
-        ease: "power2.in",
-      });
-    };
+        ease: 'power2.in',
+      })
+    }
 
-    const handleButtonLeave = () => {
+    const handleButtonLeave = (): void => {
       gsap.to(img, {
         opacity: 1,
         scale: 1,
         duration: 0.4,
-        ease: "power3.out",
-      });
-    };
+        ease: 'power3.out',
+      })
+    }
 
-    hero.addEventListener("mousemove", handleMouseMove);
-    hero.addEventListener("mouseenter", handleMouseEnter);
-    hero.addEventListener("mouseleave", handleMouseLeave);
-    button.addEventListener("mouseenter", handleButtonEnter);
-    button.addEventListener("mouseleave", handleButtonLeave);
+    hero.addEventListener('mousemove', handleMouseMove)
+    hero.addEventListener('mouseenter', handleMouseEnter)
+    hero.addEventListener('mouseleave', handleMouseLeave)
+    button.addEventListener('mouseenter', handleButtonEnter)
+    button.addEventListener('mouseleave', handleButtonLeave)
 
     return () => {
-      hero.removeEventListener("mousemove", handleMouseMove);
-      hero.removeEventListener("mouseenter", handleMouseEnter);
-      hero.removeEventListener("mouseleave", handleMouseLeave);
-      button.removeEventListener("mouseenter", handleButtonEnter);
-      button.removeEventListener("mouseleave", handleButtonLeave);
-    };
-  }, []);
+      hero.removeEventListener('mousemove', handleMouseMove)
+      hero.removeEventListener('mouseenter', handleMouseEnter)
+      hero.removeEventListener('mouseleave', handleMouseLeave)
+      button.removeEventListener('mouseenter', handleButtonEnter)
+      button.removeEventListener('mouseleave', handleButtonLeave)
+    }
+  }, [])
 
   return (
     <div ref={heroRef} className="relative overflow-hidden cursor-none">
@@ -83,11 +85,10 @@ const Hero = () => {
         <h1 className="text-3xl lg:text-[3.2vw] uppercase font-heading font-semibold">
           Shubham Panchal
         </h1>
-        <h2 className="text-6xl lg:text-[8vw] font-heading font-bold leading-[1] tracking-tight mt-3 mb-6 text-[#ffd439]">
-          Full Stack Developer <br /> &{" "}
-          <span className="text-stroke">Web Designer</span>
+        <h2 className="text-6xl lg:text-[8vw] font-heading font-bold leading-[1] tracking-tight mt-3 mb-6 text-yellow-200">
+          Full Stack Web
+          <br /> <span className="text-stroke">Developer</span>
         </h2>
-
         {/* Button with ref for hover control */}
         <div ref={buttonRef}>
           <GradientButton
@@ -101,7 +102,6 @@ const Hero = () => {
           />
         </div>
       </div>
-
       {/* Floating image following the cursor */}
       <img
         ref={imageRef}
@@ -109,8 +109,8 @@ const Hero = () => {
         alt="Cursor Follow"
         className="absolute top-0 left-0 w-32 h-32 pointer-events-none select-none object-cover"
         style={{
-          transform: "translate(-50%, -50%)",
-          borderRadius: "10%",
+          transform: 'translate(-50%, -50%)',
+          borderRadius: '10%',
         }}
       />
 
@@ -144,7 +144,7 @@ const Hero = () => {
         </svg>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
