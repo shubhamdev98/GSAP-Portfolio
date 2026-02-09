@@ -5,11 +5,17 @@ const Education: React.FC = () => {
     {
       id: 1,
       institution: 'LJ University, Ahmedabad',
-      degree: "Master’s of Computer Application (MCA)",
+      degree: 'Master’s of Computer Application (MCA)',
       duration: 'Graduated: 2023',
       details:
         'Focused on advanced topics in software engineering, database systems, and modern web technologies. Developed strong analytical and programming skills through academic projects and research work.',
-      subjects: ['Software Engineering', 'Database Systems', 'Web Development', 'Cloud Computing', 'Data Structures'],
+      subjects: [
+        'Software Engineering',
+        'Database Systems',
+        'Web Development',
+        'Cloud Computing',
+        'Data Structures',
+      ],
     },
     {
       id: 2,
